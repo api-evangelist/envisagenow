@@ -1,0 +1,25 @@
+generated: '2026-07-19'
+method: searched
+source: https://community.envisagenow.com/.well-known/openid-configuration
+notes: >-
+  Standards asserted from publicly discoverable surfaces only. Envisage
+  Technologies publishes no public developer API/OpenAPI, so most contract-level
+  standards are not applicable. The community identity provider does publish a
+  conformant OIDC/OAuth2 discovery document.
+standards:
+- id: oidc-discovery
+  conforms: true
+  evidence: community.envisagenow.com serves a valid /.well-known/openid-configuration (RFC 8414 / OIDC Discovery 1.0)
+- id: oauth2
+  conforms: true
+  evidence: authorization_endpoint + token_endpoint + revocation + introspection advertised; RS256 id_token signing
+- id: openid-connect
+  conforms: true
+  evidence: openid-configuration advertises openid scope, id_token_signing_alg RS256, userinfo_endpoint, jwks_uri
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: no public API spec to assess
+- id: fhir-r4
+  conforms: false
+- id: scim2
+  conforms: false

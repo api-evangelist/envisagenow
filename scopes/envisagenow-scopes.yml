@@ -1,0 +1,54 @@
+generated: '2026-07-19'
+method: searched
+source: https://community.envisagenow.com/.well-known/openid-configuration
+notes: >-
+  Scopes read verbatim from the Acadis Readiness Community OIDC discovery
+  document (Salesforce Experience Cloud identity provider). These are the
+  scopes_supported the community IdP advertises; they are the standard
+  Salesforce platform OAuth scope set exposed for this Experience Cloud site,
+  not a bespoke Envisage/Acadis API scope catalog (Envisage publishes no public
+  developer API).
+schemes:
+- name: oauth2
+  source: well-known/envisagenow-openid-configuration.json
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://community.envisagenow.com/cares/services/oauth2/authorize
+    tokenUrl: https://community.envisagenow.com/cares/services/oauth2/token
+scopes:
+- {scope: openid, description: OpenID Connect authentication (issue an ID token)}
+- {scope: profile, description: Basic profile claims}
+- {scope: email, description: Email address claim}
+- {scope: address, description: Address claim}
+- {scope: phone, description: Phone number claim}
+- {scope: api, description: Access the Salesforce REST/SOAP APIs on behalf of the user}
+- {scope: web, description: Web access}
+- {scope: full, description: Full access to all data accessible to the user}
+- {scope: id, description: Access the identity URL service}
+- {scope: refresh_token, description: Obtain a refresh token}
+- {scope: offline_access, description: Long-lived offline access}
+- {scope: lightning, description: Access Lightning Experience}
+- {scope: visualforce, description: Access Visualforce pages}
+- {scope: content, description: Access Salesforce CRM Content}
+- {scope: chatter_api, description: Access Chatter REST API}
+- {scope: custom_permissions, description: See the user's custom permissions}
+- {scope: wave_api, description: Access CRM Analytics (Wave) REST API}
+- {scope: eclair_api, description: Access CRM Analytics charting (Eclair) API}
+- {scope: pardot_api, description: Access Account Engagement (Pardot) API}
+- {scope: interaction_api, description: Access Interaction / Marketing Cloud API}
+- {scope: chatbot_api, description: Access Einstein Bots (chatbot) API}
+- {scope: einstein_gpt_api, description: Access Einstein GPT API}
+- {scope: sfap_api, description: Access Salesforce AI Platform API}
+- {scope: mcp_api, description: Access the Salesforce MCP (Model Context Protocol) API}
+- {scope: cdp_api, description: Access Data Cloud (CDP) API}
+- {scope: cdp_query_api, description: Query Data Cloud (CDP)}
+- {scope: cdp_ingest_api, description: Ingest data into Data Cloud (CDP)}
+- {scope: cdp_profile_api, description: Access Data Cloud unified profiles}
+- {scope: cdp_segment_api, description: Manage Data Cloud segments}
+- {scope: cdp_identityresolution_api, description: Data Cloud identity resolution}
+- {scope: cdp_calculated_insight_api, description: Data Cloud calculated insights}
+- {scope: data_cloud_user_claims, description: Data Cloud user claims}
+- {scope: scrt_api, description: Access Salesforce real-time (SCRT) API}
+- {scope: user_registration_api, description: Self-registration API}
+- {scope: pwdless_login_api, description: Passwordless login API}
+- {scope: forgot_password, description: Forgot-password flow}

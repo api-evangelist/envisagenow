@@ -1,0 +1,33 @@
+generated: '2026-07-19'
+method: searched
+source: https://community.envisagenow.com/.well-known/
+host: https://community.envisagenow.com
+notes: >-
+  The Acadis Readiness Community (community.envisagenow.com) is a Salesforce
+  Experience Cloud site; its OIDC discovery document is publicly served. The
+  marketing site (www.acadis.com) and the redirecting envisagenow.com apex
+  expose no /.well-known/ discovery documents.
+documents:
+- path: /.well-known/openid-configuration
+  status: 200
+  file: envisagenow-openid-configuration.json
+- path: /.well-known/security.txt
+  status: 401
+- path: /.well-known/oauth-authorization-server
+  status: 401
+- path: /.well-known/api-catalog
+  status: 401
+- path: /.well-known/ai-plugin.json
+  status: 401
+other_hosts:
+- host: https://www.acadis.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+- host: https://envisagenow.com
+  redirects_to: https://www.acadis.com/
+  documents:
+  - {path: /.well-known/openid-configuration, status: 404}

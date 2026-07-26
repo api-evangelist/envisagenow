@@ -1,9 +1,35 @@
 aid: envisagenow
 name: Envisagenow
-description: 'Envisagenow is a company surfaced as a portfolio company of norwest-venture-partners and
-  added to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: >-
+  Envisage Technologies LLC builds the Acadis Readiness Suite, a unified
+  public-safety training, compliance, and performance management software
+  platform used by more than 10,000 agencies and 2 million-plus first responders
+  across law enforcement, fire and rescue, corrections, emergency communications,
+  federal, military, and local-government organizations. Product lines include
+  the Acadis Readiness Suite (recruit & hire, training & testing, compliance
+  management, academy automation, performance management, internal affairs and
+  case management, inventory, budgeting, and a blended/virtual LMS), Guardian
+  Tracking (an early-intervention system for smaller agencies), and the Acadis
+  Network for individuals. The company operates as envisagenow.com (now
+  redirecting to acadis.com) and is a portfolio company of Norwest Venture
+  Partners. Envisage publishes no public developer API; this profile is API
+  Evangelist enrichment assembled from publicly discoverable surfaces only,
+  including the Acadis Readiness Community Salesforce Experience Cloud identity
+  provider.
 url: https://raw.githubusercontent.com/api-evangelist/envisagenow/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://www.acadis.com/wp-content/uploads/2021/08/home-banner-img.jpg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,10 +38,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-- Unknown
+- Public Safety
+- Training
+- Compliance
+- Performance Management
+- Law Enforcement
+- First Responders
+- Government
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +58,34 @@ maintainers:
 common:
 - type: Website
   url: https://envisagenow.com
+- type: Blog
+  url: https://www.acadis.com/types/blog/
+- type: Support
+  url: https://www.acadis.com/contact-acadis/
+- type: PrivacyPolicy
+  url: https://www.acadis.com/privacy-policy/
+- type: Login
+  url: https://community.envisagenow.com/cares/s/login/
+- type: Portal
+  url: https://community.envisagenow.com/cares/s/
+- type: WellKnown
+  url: well-known/envisagenow-well-known.yml
+- type: Authentication
+  url: authentication/envisagenow-authentication.yml
+- type: OAuthScopes
+  url: scopes/envisagenow-scopes.yml
+- type: Conformance
+  url: conformance/envisagenow-conformance.yml
+- type: DomainSecurity
+  url: security/envisagenow-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/envisagenow-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.acadis.com/acadis-security-issue-reporting/
+- type: LLMsTxt
+  url: llms/envisagenow-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

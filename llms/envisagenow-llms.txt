@@ -1,0 +1,35 @@
+# Envisage Technologies (Acadis)
+
+> Envisage Technologies builds the Acadis Readiness Suite, a unified public-safety
+> training, compliance, and performance software platform used by 10,000+ agencies
+> and 2M+ first responders across law enforcement, fire/rescue, corrections,
+> emergency communications, federal, military, and local government. Envisage is a
+> portfolio company of Norwest Venture Partners. It publishes no public developer
+> API; the profile below is API Evangelist enrichment from publicly discoverable
+> surfaces only.
+
+## Company
+- Website (redirects to Acadis): https://envisagenow.com
+- Acadis marketing site: https://www.acadis.com/
+- Blog: https://www.acadis.com/types/blog/
+- Careers: https://www.acadis.com/careers/
+- Contact / Support: https://www.acadis.com/contact-acadis/
+- Privacy Policy: https://www.acadis.com/privacy-policy/
+- Security issue reporting (responsible disclosure): https://www.acadis.com/acadis-security-issue-reporting/
+
+## Products
+- Acadis Readiness Suite (400+ personnel): recruit & hire, training & testing, compliance, academy automation, performance management, internal affairs/case management, inventory, budgeting, LMS, early intervention.
+- Guardian Tracking (early intervention system, <400 personnel)
+- Acadis Network (individual users)
+
+## Community / Identity
+- Acadis Readiness Community (Salesforce Experience Cloud): https://community.envisagenow.com/cares/s/login/
+- OIDC discovery: https://community.envisagenow.com/.well-known/openid-configuration
+
+## Enrichment artifacts (API Evangelist)
+- Well-known index: well-known/envisagenow-well-known.yml
+- Authentication profile: authentication/envisagenow-authentication.yml
+- OAuth scopes: scopes/envisagenow-scopes.yml
+- Conformance: conformance/envisagenow-conformance.yml
+- Domain security: security/envisagenow-domain-security.yml
+- Vulnerability disclosure: security/envisagenow-vulnerability-disclosure.yml
