@@ -38,6 +38,7 @@ accessModel:
   confidence: medium
   source:
   - authentication
+  - {url: 'https://envisagenow.com', status: 301, note: 'declared website redirects to https://www.acadis.com/ — a different registrable domain (envisagenow.com -> acadis.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
   generated: '2026-07-22'
   method: derived
 image: https://www.acadis.com/wp-content/uploads/2021/08/home-banner-img.jpg
